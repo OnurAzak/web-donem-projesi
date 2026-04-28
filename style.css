@@ -1,0 +1,49 @@
+/* Genel Ayarlar */
+body {
+    background-color: #fdfdfd;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Hero (Giriş) Alanı Arkaplanı */
+.hero-header {
+    height: 75vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1500&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Profil Kartı Efektleri */
+.profile-card {
+    transition: transform 0.4s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-card .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 123, 255, 0.85);
+    backdrop-filter: blur(5px);
+}
+
+/* Bilgi Kartları */
+.info-card {
+    transition: all 0.3s ease;
+    border-radius: 1.5rem;
+}
+
+.info-card:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Scroll yumuşatma */
+html {
+    scroll-behavior: smooth;
+}
