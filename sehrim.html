@@ -4,88 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manisa - Şehrim</title>
+    <!-- BOOTSTRAP CSS (Tasarımın çalışması için mutlaka kalmalı) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-light">
 
-    <nav style="background: #2c3e50; padding: 15px; text-align: center;">
+    <!-- Navigasyon -->
+    <nav class="py-3 shadow-sm" style="background: #2c3e50; text-align: center;">
         <a href="index.html" style="color: white; text-decoration: none; font-weight: bold;">← Ana Sayfaya Dön</a>
     </nav>
 
-    <div class="proje-konteyner">
-        <h1>Manisa: Efsanelerin ve Şehzadelerin Şehri</h1>
+<div class="container manisa-ozel-icerik my-5 py-5 bg-white shadow rounded-4">
+        <h1 class="text-center mb-5 fw-bold" style="color: #d35400;">Manisa: Efsanelerin ve Şehzadelerin Şehri</h1>
 
-        <article class="bolum">
-            <h2>Efsanelerin Doğuşu</h2>
-            <img src="sardes.png" class="ana-resim">
-            <p>Manisa’nın hikayesi, antik çağlarda Teselya’dan gelen Magnetlerin Sipylos Dağı eteklerinde kurduğu Magnesia ile başlar. Hititlerden Friglere kadar pek çok medeniyetin iz bıraktığı bu topraklar, tarihin akışını değiştiren Lidya Krallığı’na ev sahipliği yapmış; paranın ilk kez basıldığı yer olarak dünya ticaretinin merkezi olmuştur.</p>
-        </article>
-
-        <article class="bolum">
-            <h2>Şehzadeler Şehri & Muradiye Cami</h2>
-            <img src="manisa-muradiye-camii-genel.jpg.png" class="ana-resim">
-            <p>1313 yılında Saruhanoğulları’nın fethiyle Türk-İslam mührünün vurulduğu şehir, Osmanlı İmparatorluğu döneminde bir "Ekol" haline gelmiştir. Fatih Sultan Mehmet ve Kanuni Sultan Süleyman gibi dünya tarihine yön veren 16 şehzadenin yetiştiği Manisa, imparatorluğun yönetim vizyonunun şekillendiği bir siyaset ve kültür odağıdır. Şehrin silüetini süsleyen ve Mimar Sinan'ın Ege bölgesindeki tek eseri olan Muradiye Camii ve Külliyesi, klasik Osmanlı mimarisinin en zarif örneklerinden biridir.</p>
-        </article>
-
-        <article class="bolum">
-            <h2>Cumhuriyet ve Bugün</h2>
-            <p>8 Eylül 1922'de bağımsızlığına kavuşan Manisa, Cumhuriyet döneminde sanayisi, bereketli üzüm bağları ve köklü eğitim kültürüyle modern Türkiye'nin parlayan yıldızı olmuştur. Bugün, Spil Dağı’nın gölgesinde tarihini korurken, yetiştirdiği efsanelerle geleceğe yön vermeye devam etmektedir.</p>
-        </article>
-
-        <article class="bolum">
-            <h2>Kral Yolu ve Manisa</h2>
-            <img src="a.jpg" class="ana-resim">
-            <p>Dünya tarihinin en önemli ticaret yollarından biri olan Kral Yolu’nun başlangıç noktası Manisa’dır. Lidya Krallığı’nın başkenti Sardes’ten başlayan bu yol, Mezopotamya’ya kadar uzanıyordu. Manisa, bu yol sayesinde tarihte paranın ilk basıldığı ve ticaretin küresel ölçekte yönetildiği bir merkez haline gelmiştir.</p>
-        </article>
-
-        <article class="bolum">
-            <h2>Manisa Lalesi (Anemon)</h2>
-            <img src="manisa-lalesi-anemon.png" class="ana-resim">
-            <p>Spil Dağı Milli Parkı’nda doğal olarak yetişen ve koruma altında olan endemik bir türdür. Latince adı Anemone coronaria olan bu lale, bölgenin iklim ve toprak yapısına özgü kırmızı rengiyle bilinir. Her yıl bahar aylarında çiçek açan lale, şehrin doğa turizmindeki en önemli sembollerinden biridir.</p>
-        </article>
-
-        <article class="bolum festival-kutu">
-            <h2>Hafsa Sultan ve Mesir Macunu Festivali</h2>
-            <p>Osmanlı döneminde Yavuz Sultan Selim’in eşi ve Kanuni Sultan Süleyman’ın annesi Hafsa Sultan, Manisa’da hastalandığında dönemin hekimi Merkez Efendi tarafından 41 çeşit baharat ve ottan oluşan şifalı bir karışım hazırlanmıştır. Bu macunla sağlığına kavuşan Hafsa Sultan, karışımın her yıl aynı dönemde halka saçılmasını vasiyet etmiştir. Bu vasiyet üzerine başlayan gelenek, bugün yaklaşık 500 yıldır Uluslararası Mesir Macunu Festivali olarak devam etmektedir. Her yıl Nevruz haftasında Muradiye Camii ve Külliyesi çevresinde halka saçılan mesir macunu, toplumsal yardımlaşmayı ve şifayı simgeleyen bu köklü geçmişiyle UNESCO Somut Olmayan Kültürel Miras listesinde yer almaktadır.</p>
-        </article>
-
-        <section class="spor-alani">
-            <h2 class="spor-baslik">Spor ve Yaşam</h2>
-            
-            <div class="video-cerceve">
-                <video controls width="100%">
-                    <source src="manisaspor.mp4" type="video/mp4">
-                    Tarayıcınız video oynatmayı desteklemiyor.
-                </video>
+        <!-- 1. BÖLÜM: Efsanelerin Doğuşu (Resim Solda) -->
+        <div class="row align-items-center mb-5 pb-5">
+            <div class="col-md-6 text-center">
+          <img src="Gemini_Generated_Image_ie9knkie9knkie9k.png" class="img-fluid rounded-4 shadow-sm" alt="Edebiyat ve Padişahlar">
             </div>
-
-            <div class="spor-kart">
-                <h3>1. Manisaspor: Ege’nin Futbol Okulu</h3>
-                <img src="manisaspor.png" class="ana-resim">
-                <p>Manisaspor, 1965 yılından bu yana şehrin en köklü futbol temsilcisidir. Kulüp, özellikle 2000'li yıllarda Süper Lig'de sergilediği performansla ve Türk futboluna kazandırdığı Arda Turan, Selçuk İnan, Caner Erkin gibi yıldız isimlerle bir "futbolcu fabrikası" olarak tanınmıştır. Siyah-beyaz-kırmızılı ekip, yetiştirici kimliği ve vizyoner altyapı kültürüyle Manisa'nın futbol mirasının temel taşıdır.</p>
-                <p><strong>Kaynak: TFF Kulüp Bilgi Bankası / Manisaspor Tarihçesi.</strong></p>
+            <div class="col-md-6 ps-md-5 mt-4 mt-md-0">
+                <h2 class="fw-bold h3 mb-3 border-bottom pb-2">Efsanelerin Doğuşu</h2>
+                <p class="text-muted lead" style="text-align: justify;">
+                    Manisa’nın hikayesi, antik çağlarda Teselya’dan gelen Magnetlerin Sipylos Dağı eteklerinde kurduğu Magnesia ile başlar. Hititlerden Friglere kadar pek çok medeniyetin iz bıraktığı bu topraklar, tarihin akışını değiştiren Lidya Krallığı’na ev sahipliği yapmış; paranın ilk kez basıldığı yer olarak dünya ticaretinin merkezi olmuştur.
+                </p>
             </div>
+        </div>
 
-            <div class="spor-kart">
-                <h3>2. Akhisarspor: Kupa Şampiyonu ve Avrupa Temsilcisi</h3>
-                <img src="akhisarspor-kulup-logo.png" class="ana-resim">
-                <p>Manisa spor tarihinin en büyük ulusal başarıları Akhisarspor tarafından yazılmıştır. 2017-2018 sezonunda Ziraat Türkiye Kupası'nı, ardından TFF Süper Kupa'yı müzesine götüren kulüp, bu başarılarıyla Manisa'yı UEFA Avrupa Ligi gruplarında temsil etme hakkı kazanmıştır. Akhisarspor, Manisa ilinin futbol dünyasındaki rekabetçi gücünü uluslararası arenaya taşıyan en önemli başarı simgesidir.</p>
-                <p><strong>Kaynak: TFF Resmi Kayıtları / Akhisarspor Başarı Arşivi.</strong></p>
+        <!-- 2. BÖLÜM: Şehzadeler Şehri (Resim Sağda) -->
+        <div class="row align-items-center mb-5 pb-5 flex-md-row-reverse">
+            <div class="col-md-6 text-center">
+             <img src="manisa-muradiye-camii-genel.jpg.png" class="img-fluid rounded-4 shadow-sm" alt="Muradiye Camii">
             </div>
+            <div class="col-md-6 pe-md-5 mt-4 mt-md-0">
+                <h2 class="fw-bold h3 mb-3 border-bottom pb-2">Şehzadeler Şehri & Muradiye Cami</h2>
+                <p class="text-muted lead" style="text-align: justify;">
+                    1313 yılında Saruhanoğulları’nın fethiyle Türk-İslam mührünün vurulduğu şehir, Osmanlı İmparatorluğu döneminde bir "Ekol" haline gelmiştir. Fatih Sultan Mehmet ve Kanuni Sultan Süleyman gibi dünya tarihine yön veren 16 şehzadenin yetiştiği Manisa, imparatorluğun yönetim vizyonunun şekillendiği bir siyaset ve kültür odağıdır. Şehrin silüetini süsleyen ve Mimar Sinan'ın Ege bölgesindeki tek eseri olan Muradiye Camii ve Külliyesi, klasik Osmanlı mimarisinin en zarif örneklerinden biridir.
+                </p>
+            </div>
+        </div>
 
-            <div class="spor-kart">
-                <h3>3. Doğa ve Ekstrem Sporlar: Spil’in Zirvesi</h3>
-                <p>Manisa, coğrafi yapısı sayesinde sadece saha sporları değil, doğa sporları için de bir merkezdir. Spil Dağı Milli Parkı, Türkiye’nin en önemli doğa sporları rotalarından biridir. Yamaç paraşütü, dağcılık, trekking, bisiklet ve off-road tutkunları için ideal bir zemin hazırlar.</p>
-                <p><strong>Kaynak: Manisa Gençlik ve Spor İl Müdürlüğü / Doğa Koruma ve Milli Parklar Envanteri.</strong></p>
-            </div>
+        <!-- 3. BÖLÜM: Cumhuriyet ve Bugün -->
+        <div class="row mb-5 px-3">
+            <div class="col-12 p-4 rounded-4 border-start border-primary border-5 bg-light shadow-sm">
 
-            <div class="spor-kart">
-                <h3>4. Salon Sporları ve Diğer Branşlar</h3>
-                <p>Manisa, futbol dışındaki branşlarda da oldukça aktiftir. Özellikle basketbolda Süper Lig düzeyindeki takımlarıyla salon sporlarında güçlü bir taraftar kitlesine sahiptir. Ayrıca şehirdeki tam olimpik yüzme havuzları ve kapalı spor kompleksleri, bireysel branşlarda genç yeteneklerin yetişmesine olanak sağlar.</p>
-                <p><strong>Kaynak: Manisa Büyükşehir Belediyesi Spor Faaliyetleri Raporu.</strong></p>
+                <h2 class="fw-bold h3">Cumhuriyet ve Bugün</h2>
+                <p class="mb-0 fs-5">
+                    8 Eylül 1922'de bağımsızlığına kavuşan Manisa, Cumhuriyet döneminde sanayisi, bereketli üzüm bağları ve köklü eğitim kültürüyle modern Türkiye'nin parlayan yıldızı olmuştur. Bugün, Spil Dağı’nın gölgesinde tarihini korurken, yetiştirdiği efsanelerle geleceğe yön vermeye devam etmektedir.
+                </p>
             </div>
-        </section>
+        </div>
+
+        <!-- 4. BÖLÜM: Kral Yolu -->
+        <div class="row align-items-center mb-5 pb-5">
+            <div class="col-md-6 text-center">
+                <img src="a.jpg" class="img-fluid rounded-4 shadow-sm" alt="Kral Yolu">
+            </div>
+            <div class="col-md-6 ps-md-5 mt-4 mt-md-0">
+                <h2 class="fw-bold h3 mb-3 border-bottom pb-2">Kral Yolu ve Manisa</h2>
+                <p class="text-muted lead" style="text-align: justify;">
+                    Dünya tarihinin en önemli ticaret yollarından biri olan Kral Yolu’nun başlangıç noktası Manisa’dır. Lidya Krallığı’nın başkenti Sardes’ten başlayan bu yol, Mezopotamya’ya kadar uzanıyordu. Manisa, bu yol sayesinde tarihte paranın ilk basıldığı ve ticaretin küresel ölçekte yönetildiği bir merkez haline gelmiştir.
+                </p>
+            </div>
+        </div>
+
+        <!-- 5. BÖLÜM: Manisa Lalesi -->
+        <div class="row align-items-center mb-5 pb-5 flex-md-row-reverse">
+            <div class="col-md-6 text-center">
+                <img src="manisa-lalesi-anemon.png" class="img-fluid rounded-4 shadow-sm" alt="Manisa Lalesi">
+            </div>
+            <div class="col-md-6 pe-md-5 mt-4 mt-md-0">
+                <h2 class="fw-bold h3 mb-3 border-bottom pb-2">Manisa Lalesi (Anemon)</h2>
+                <p class="text-muted lead" style="text-align: justify;">
+                    Spil Dağı Milli Parkı’nda doğal olarak yetişen ve koruma altında olan endemik bir türdür. Latince adı *Anemone coronaria* olan bu lale, bölgenin iklim ve toprak yapısına özgü kırmızı rengiyle bilinir. Her yıl bahar aylarında çiçek açan lale, şehrin doğa turizmindeki en önemli sembollerinden biridir.
+                </p>
+            </div>
+        </div>
+
+
+    <!-- Edebiyat ve Padişahlar -->
+    <div class="row align-items-center mb-5 pb-5">
+        <div class="col-md-6 text-center">
+           <img src="Gemini_Generated_Image_wdx4zpwdx4zpwdx4.png" class="img-fluid rounded-4 shadow-sm" alt="Manisa Efsaneleri">
+           
+            <img src="padisah-edebiyat.png" class="img-fluid rounded-4 shadow-sm" alt="Fatih ve Kanuni Edebiyat">
+        </div>
+        <div class="col-md-6 ps-md-5 mt-4 mt-md-0">
+            <h2 class="fw-bold h3 mb-3 border-bottom pb-2">Şiirin ve Sanatın Sancağı</h2>
+            <p class="text-muted lead" style="text-align: justify;">
+                Manisa, sadece bir siyaset merkezi değil, aynı zamanda Osmanlı şehzadeleriyle birlikte Osmanlı şiirinin de yetiştiği sancaktır. Bu sancakta yetişen <strong>Fatih Sultan Mehmet (Avni)</strong> ve <strong>Kanuni Sultan Süleyman (Muhibbi)</strong> sadece devlet yönetiminde değil edebiyatta da önemli yere sahiptir. 
+            </p>
+            <p class="text-muted">
+                Özellikle Manisa’nın sembolü olan <strong>lale</strong>, her iki sultanın şiirlerinde de saflığın ve güzelliğin bir temsili olarak yer bulmuştur. Şehrin doğasından ilham alan bu dizeler, Manisa lalesinin zarif dokusunu divan edebiyatının en nadide örnekleriyle birleştirerek yüzyılları aşan edebi bir miras oluşturmuştur.
+            </p>
+        </div>
     </div>
+        
+        
+        <!-- 6. BÖLÜM: Mesir Macunu Festivali -->
+        <div class="row mb-5 px-3">
+            <div class="col-12 p-5 rounded-4 shadow-sm" style="background: #fdf2e9; border-left: 10px solid #d35400;">
+                <h2 class="fw-bold h3 mb-3 text-dark">Hafsa Sultan ve Mesir Macunu Festivali</h2>
+                <p class="lead text-dark mb-0">
+                    Osmanlı döneminde Yavuz Sultan Selim’in eşi ve Kanuni Sultan Süleyman’ın annesi Hafsa Sultan, Manisa’da hastalandığında dönemin hekimi Merkez Efendi tarafından 41 çeşit baharat ve ottan oluşan şifalı bir karışım hazırlanmıştır. Bu vasiyet üzerine başlayan gelenek, bugün yaklaşık 500 yıldır Uluslararası Mesir Macunu Festivali olarak devam etmektedir. UNESCO Somut Olmayan Kültürel Miras listesinde yer almaktadır.
+                </p>
+            </div>
+        </div>
+
+            
+<!-- 5. BÖLÜM: Spor ve Yaşam -->
+<section class="spor-alani pt-4">
+    <h2 class="text-center fw-bold mb-5">Spor ve Yaşam</h2>
+    <div class="row g-0 rounded-4 overflow-hidden shadow-lg mb-5 bg-white border" style="min-height: 450px;">
+        <!-- Video Alanı -->
+        <div class="col-md-8 bg-black d-flex align-items-center">
+            <video controls class="w-100" style="max-height: 450px; object-fit: contain;">
+                <source src="manisaspor-tanitim.mp4.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+     
+<div class="col-md-4 p-4 d-flex flex-column justify-content-center bg-dark text-white text-center">
+    
+    <!-- Manisaspor ve Akhisarspor legoları -->
+    <div class="d-flex justify-content-center align-items-center gap-3 mb-4">
+        <img src="manisaspor arma.jpg" class="rounded-circle border border-2 border-warning shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Manisaspor">
+        <img src="akhisarspor-kulup-logo.png" style="width: 80px; height: auto; object-fit: contain;" alt="Akhisarspor">
+    </div>
+
+    <!-- Metin İçeriği -->
+    <div class="icerik-metin">
+        <h4 class="fw-bold text-warning mb-3">Manisa'nın Spor Kültürü</h4>
+        <p class="small opacity-75 px-2">Futboldan doğa sporlarına, Ege'nin en dinamik spor altyapısına dair görüntüler ve kulüp başarıları.</p>
+    </div>
+
+    <!-- Alt Bilgi Hattı -->
+    <div class="border-top border-secondary mt-3 pt-3">
+        <p class="small mb-0 text-muted" style="font-size: 0.75rem;">Kaynak: Yerel Spor Arşivleri</p>
+    </div>
+</div>
+
+<!-- Spor Kartları Bölümü -->
+<div class="row g-4 mt-3"> 
+    <!-- Manisaspor -->
+    <div class="col-md-6">
+        <div class="card h-100 p-4" style="border-left: 6px solid #d35400 !important;">
+            <h5 class="fw-bold mb-3">1. Manisaspor: Futbol Okulu</h5>
+            <p class="text-muted mb-0" style="text-align: justify; line-height: 1.6;">
+                Manisaspor, 1965 yılından bu yana şehrin en köklü futbol temsilcisidir. Kulüp, özellikle 2000'li yıllarda Süper Lig'de sergilediği performansla ve Türk futboluna kazandırdığı Arda Turan, Selçuk İnan, Caner Erkin gibi yıldız isimlerle bir "futbolcu fabrikası" olarak tanınmıştır. Siyah-beyaz-kırmızılı ekip, yetiştirici kimliği ve vizyoner altyapı kültürüyle Manisa'nın futbol mirasının temel taşıdır.
+            </p>
+        </div>
+    </div>
+    <!-- Akhisarspor -->
+    <div class="col-md-6">
+        <div class="card h-100 p-4" style="border-left: 6px solid #27ae60 !important;">
+            <h5 class="fw-bold mb-3">2. Akhisarspor: Kupa Şampiyonu</h5>
+            <p class="text-muted mb-0" style="text-align: justify; line-height: 1.6;">
+                Manisa futbol tarihinin bazı büyük başarıları Akhisarspor tarafından yazılmıştır. 2017-2018 sezonunda Ziraat Türkiye Kupası'nı, ardından TFF Süper Kupa'yı müzesine götüren kulüp, bu başarılarıyla Manisa'yı UEFA Avrupa Ligi gruplarında temsil etme hakkı kazanmıştır. Akhisarspor, Manisa'nın futbol dünyasındaki rekabetçi gücünü uluslararası arenaya taşıyan önemli başarı simgesidir.
+            </p>
+        </div>
+    </div>
+</div>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>

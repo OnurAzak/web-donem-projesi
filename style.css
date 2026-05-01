@@ -4,21 +4,7 @@ body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-.hero-content { /* Yazı ve butonları saran div ismi sende farklı olabilir */
-    display: flex;
-    flex-direction: column;
-    align-items: center;    /* Yatayda tam ortalar */
-    justify-content: center; /* Dikeyde tam ortalar */
-    text-align: center;
-    gap: 25px;              /* Elemanların arasına standart boşluk koyar */
-}
-
-.button-group {
-    display: flex;
-    gap: 15px;         /* Butonlar arasına 15px boşluk */
-    justify-content: center;
-}
-/* Hero (Giriş) Alanı Arkaplanı */
+/* Giriş Alanı Arkaplanı */
 .hero-header {
     height: 75vh;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
@@ -77,3 +63,86 @@ video { width: 100%; display: block; }
 .kaynak { display: block; font-size: 0.8em; color: #888; margin-top: 10px; }
 h1 { color: #d35400; text-align: center; }
 p { line-height: 1.7; text-align: justify; }
+
+
+/*Dikey resimler için konumlandırma */
+img[alt="Manisa Lalesi"] {
+    object-position: center; /* Lale tam ortada kalsın */
+}
+
+/* Bölümler arasındaki boşluğu artırıp daha düzenli gösterir*/
+.row.align-items-center {
+    margin-bottom: 100px !important;
+}
+
+/* Yazıların resimlerin tam ortasına hizalanması için kullanılır */
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img-fluid {
+    width: 100% !important;
+    height: 350px !important; /* tüm resimlerin yüksekliğini eşitler*/
+    object-fit: cover; /* Çerçeveye sığdırır */
+}
+/* Spor Kutusunun Orantısını Düzenler */
+.row.g-0.rounded-4 {
+    display: flex;
+    align-items: stretch; /* Video ve yanındaki kutunun boyunu eşitler */
+}
+
+
+.row.g-0.rounded-4 {
+    display: flex;
+    align-items: stretch; /* Video ve yan kutunun boyunu dikeyde eşitler */
+}
+
+/* Masaüstü cihazlar için özel yükseklik ve taşma ayarları */
+@media (min-width: 768px) {
+    .row.g-0.rounded-4 {
+        overflow: visible !important;
+    }
+
+    .row.g-0.rounded-4 video {
+        height: 100%;
+        object-fit: cover; /* Siyah boşlukları önlemek için videoyu alana yayar */
+    }
+} /* <--- Media sorgusu burada biter.*/
+/* MANİSA SAYFASI KURTARMA KODLARI */
+.manisa-ozel-sayfa.container {
+    background-color: white !important;
+    display: block !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    padding-bottom: 150px !important; 
+    overflow: visible !important;
+}
+
+.manisa-ozel-sayfa .img-fluid {
+    width: 100% !important;
+    height: 350px !important;
+    object-fit: cover !important;
+    border-radius: 15px;
+}
+
+.manisa-ozel-sayfa .card {
+    margin-bottom: 30px !important;
+    border: none !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+}
+
+/* Yazı kesilmesini durduran ve alanı genişleten kısım */
+.manisa-ozel-sayfa .card, 
+.manisa-ozel-sayfa p, 
+.manisa-ozel-sayfa .col-md-4 {
+    height: auto !important; 
+    min-height: min-content !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+/* Kartların içindeki metnin sığmasını sağlar*/
+.manisa-ozel-sayfa .card-body {
+    display: block !important;
+}
