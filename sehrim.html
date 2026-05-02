@@ -111,41 +111,42 @@
             </div>
         </div>
 
-            
-<!-- 5. BÖLÜM: Spor ve Yaşam -->
-<section class="spor-alani pt-4">
-    <h2 class="text-center fw-bold mb-5">Spor ve Yaşam</h2>
-    <div class="row g-0 rounded-4 overflow-hidden shadow-lg mb-5 bg-white border" style="min-height: 450px;">
-        <!-- Video Alanı -->
-        <div class="col-md-8 bg-black d-flex align-items-center">
-            <video controls class="w-100" style="max-height: 450px; object-fit: contain;">
-                <source src="manisaspor-tanitim.mp4.mp4" type="video/mp4">
+<!-- Şehrin Spor Kültürü Bölümü -->
+<div class="container my-5">
+ 
+    <div class="row bg-white rounded-4 shadow p-4 align-items-center">
+        
+        <!-- Sol Taraf: Video (Ekranın yarısından biraz fazlasını kaplar) -->
+        <div class="col-lg-7 mb-4 mb-lg-0">
+            <!-- Videoya da hafif bir gölge ve yuvarlaklık verdik ki sırıtmasın -->
+            <video width="100%" height="auto" controls class="rounded shadow-sm border">
+                <source src="manisa.mp4" type="video/mp4">
+                Tarayıcınız video oynatmayı desteklemiyor.
             </video>
         </div>
-        
-     
-<div class="col-md-4 p-4 d-flex flex-column justify-content-center bg-dark text-white text-center">
+
+        <!-- Sağ Taraf: Başlık, Yazı ve Logolar -->
+        <div class="col-lg-5 px-lg-4">
+            <!-- Başlık rengi-->
+            <h3 class="text-warning fw-bold border-bottom pb-2">Manisa'nın Spor Kültürü</h3>
+            <p class="text-muted mt-3">
+                Futboldan doğa sporlarına, Ege'nin en dinamik spor altyapısına dair görüntüler ve kulüp başarıları.
+            </p>
+            
+            <small class="text-secondary d-block mb-4">Kaynak: Yerel Spor Arşivleri</small>
+
+            <!-- Logoları yan yana ve aralıklı-->
+          <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-4 mt-4">
     
-    <!-- Manisaspor ve Akhisarspor legoları -->
-    <div class="d-flex justify-content-center align-items-center gap-3 mb-4">
-        <img src="manisaspor arma.jpg" class="rounded-circle border border-2 border-warning shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Manisaspor">
-        <img src="akhisarspor-kulup-logo.png" style="width: 80px; height: auto; object-fit: contain;" alt="Akhisarspor">
-    </div>
+        <img src="manisa.jpg" alt="Manisaspor" class="border border-warning rounded-circle p-2 shadow" style="width: 180px; height: 180px; object-fit: contain;">
+              <img src="akhisarspor-kulup-logo.png" alt="Akhisarspor" class="border border-success rounded p-2 shadow" style="width: 180px; height: 180px; object-fit: contain;">
+        </div>
 
-    <!-- Metin İçeriği -->
-    <div class="icerik-metin">
-        <h4 class="fw-bold text-warning mb-3">Manisa'nın Spor Kültürü</h4>
-        <p class="small opacity-75 px-2">Futboldan doğa sporlarına, Ege'nin en dinamik spor altyapısına dair görüntüler ve kulüp başarıları.</p>
-    </div>
-
-    <!-- Alt Bilgi Hattı -->
-    <div class="border-top border-secondary mt-3 pt-3">
-        <p class="small mb-0 text-muted" style="font-size: 0.75rem;">Kaynak: Yerel Spor Arşivleri</p>
     </div>
 </div>
 
 <!-- Spor Kartları Bölümü -->
-<div class="row g-4 mt-3"> 
+<div class="row g-4 mt-3">
     <!-- Manisaspor -->
     <div class="col-md-6">
         <div class="card h-100 p-4" style="border-left: 6px solid #d35400 !important;">
@@ -155,6 +156,7 @@
             </p>
         </div>
     </div>
+    
     <!-- Akhisarspor -->
     <div class="col-md-6">
         <div class="card h-100 p-4" style="border-left: 6px solid #27ae60 !important;">
