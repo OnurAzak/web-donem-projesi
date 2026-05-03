@@ -10,10 +10,64 @@
 </head>
 <body class="bg-light">
 
-    <!-- Navigasyon -->
-    <nav class="py-3 shadow-sm" style="background: #2c3e50; text-align: center;">
-        <a href="index.html" style="color: white; text-decoration: none; font-weight: bold;">← Ana Sayfaya Dön</a>
-    </nav>
+<!-- Üst Mini Buton -->
+<div class="container mt-3">
+  <a href="index.html" class="btn btn-dark btn-sm px-3 py-2 shadow-sm rounded-pill fw-bold">
+    ← Ana Sayfaya Dön
+  </a>
+</div>
+
+    <!-- Şehrim Slider Başlangıcı -->
+<div class="container mt-4 mb-5">
+  <div id="sehrimSlider" class="carousel slide" data-bs-ride="carousel">
+    
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="4"></button>
+    </div>
+
+    <div class="carousel-inner rounded-4 shadow-lg">
+      
+      <!-- 1. Fotoğraf: Kula -->
+      <div class="carousel-item active">
+        <img src="kula.webp" class="d-block w-100" style="aspect-ratio: 16/9; object-fit: cover;" alt="Kula Peri Bacaları">
+      </div>
+      
+      <!-- 2. Fotoğraf: Yılkı Atları -->
+      <div class="carousel-item">
+        <img src="at.webp" class="d-block w-100" style="aspect-ratio: 16/9; object-fit: cover;" alt="Spil Yılkı Atları">
+      </div>
+      
+      <!-- 3. Fotoğraf: Tarihi Han -->
+      <div class="carousel-item">
+        <img src="han.webp" class="d-block w-100" style="aspect-ratio: 16/9; object-fit: cover;" alt="Tarihi Kurşunlu Han">
+      </div>
+      
+      <!-- 4. Fotoğraf: Valilik -->
+      <div class="carousel-item">
+        <img src="valilik.webp" class="d-block w-100" style="aspect-ratio: 16/9; object-fit: cover;" alt="Manisa Valiliği">
+      </div>
+
+      <!-- 5. Fotoğraf: Şehir Merkezi -->
+      <div class="carousel-item">
+        <img src="merkez.webp" class="d-block w-100" style="aspect-ratio: 16/9; object-fit: cover;" alt="Manisa Şehir Merkezi">
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#sehrimSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#sehrimSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+
+
 
 <div class="container manisa-ozel-icerik my-5 py-5 bg-white shadow rounded-4">
         <h1 class="text-center mb-5 fw-bold" style="color: #d35400;">Manisa: Efsanelerin ve Şehzadelerin Şehri</h1>
@@ -58,7 +112,7 @@
         <!-- 4. BÖLÜM: Kral Yolu -->
         <div class="row align-items-center mb-5 pb-5">
             <div class="col-md-6 text-center">
-                <img src="a.jpg" class="img-fluid rounded-4 shadow-sm" alt="Kral Yolu">
+                <img src="sardeskent.jpg" class="img-fluid rounded-4 shadow-sm" alt="Kral Yolu">
             </div>
             <div class="col-md-6 ps-md-5 mt-4 mt-md-0">
                 <h2 class="fw-bold h3 mb-3 border-bottom pb-2">Kral Yolu ve Manisa</h2>
@@ -119,7 +173,7 @@
         <!-- Video Alanı -->
         <div class="col-md-8 bg-black d-flex align-items-center">
             <video controls class="w-100" style="max-height: 450px; object-fit: contain;">
-                <source src="manisaspor-tanitim.mp4.mp4" type="video/mp4">
+                <source src="manisasporvideo.mp4" type="video/mp4">
             </video>
         </div>
         
@@ -128,7 +182,7 @@
     
     <!-- Manisaspor ve Akhisarspor legoları -->
     <div class="d-flex justify-content-center align-items-center gap-3 mb-4">
-        <img src="manisaspor arma.jpg" class="rounded-circle border border-2 border-warning shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Manisaspor">
+        <img src="manisa.jpg" class="rounded-circle border border-2 border-warning shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Manisaspor">
         <img src="akhisarspor-kulup-logo.png" style="width: 80px; height: auto; object-fit: contain;" alt="Akhisarspor">
     </div>
 
@@ -151,7 +205,7 @@
         <div class="card h-100 p-4" style="border-left: 6px solid #d35400 !important;">
             <h5 class="fw-bold mb-3">1. Manisaspor: Futbol Okulu</h5>
             <p class="text-muted mb-0" style="text-align: justify; line-height: 1.6;">
-                Manisaspor, 1965 yılından bu yana şehrin en köklü futbol temsilcisidir. Kulüp, özellikle 2000'li yıllarda Süper Lig'de sergilediği performansla ve Türk futboluna kazandırdığı Arda Turan, Selçuk İnan, Caner Erkin gibi yıldız isimlerle bir "futbolcu fabrikası" olarak tanınmıştır. Siyah-beyaz-kırmızılı ekip, yetiştirici kimliği ve vizyoner altyapı kültürüyle Manisa'nın futbol mirasının temel taşıdır.
+                Manisaspor, 1965 yılından bu yana şehrin en köklü futbol temsilcisidir. Kulüp, özellikle 2000'li yıllarda Süper Lig'de sergilediği performansla ve Türk futboluna kazandırdığı Arda Turan, Selçuk İnan, Caner Erkin, Burak Yılmaz gibi yıldız isimlerli Türk futboluna kazandırmıştır. Siyah-beyaz-kırmızılı ekip,  yetiştirici kimliği ve vizyoner altyapı kültürüyle ülkenin futbol mirasının temel taşlarından biridir.
             </p>
         </div>
     </div>
@@ -160,7 +214,7 @@
         <div class="card h-100 p-4" style="border-left: 6px solid #27ae60 !important;">
             <h5 class="fw-bold mb-3">2. Akhisarspor: Kupa Şampiyonu</h5>
             <p class="text-muted mb-0" style="text-align: justify; line-height: 1.6;">
-                Manisa futbol tarihinin bazı büyük başarıları Akhisarspor tarafından yazılmıştır. 2017-2018 sezonunda Ziraat Türkiye Kupası'nı, ardından TFF Süper Kupa'yı müzesine götüren kulüp, bu başarılarıyla Manisa'yı UEFA Avrupa Ligi gruplarında temsil etme hakkı kazanmıştır. Akhisarspor, Manisa'nın futbol dünyasındaki rekabetçi gücünü uluslararası arenaya taşıyan önemli başarı simgesidir.
+                Manisa futbol tarihinin büyük başarıları arasında Akhisarspor da tarihiyle boy gösteriyor. 2017-2018 sezonunda Ziraat Türkiye Kupası'nı, ardından TFF Süper Kupa'yı müzesine götüren kulüp, bu başarılarıyla Manisa'yı UEFA Avrupa Ligi gruplarında temsil etme hakkı kazanmıştır. Akhisarspor, Manisa'nın futbol dünyasındaki rekabetçi gücünü uluslararası arenaya taşıyan önemli başarı simgesidir.
             </p>
         </div>
     </div>
