@@ -10,10 +10,31 @@
     <link rel="stylesheet" href="style.css">
     <!-- JS Framework Zorunluluğu: Vue.js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- İkonlar için FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-light">
 
-    <!-- Navigasyon barını buraya index.html'den olduğu gibi kopyala -->
+    <!-- Ortak Üst Menü (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Onur'un Portfolyosu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase small fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Hakkımda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="miras.html">Mirasımız</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary btn-sm text-white ms-lg-3 px-3" href="login.php">Giriş</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div class="container my-5 py-5 bg-white rounded-4 shadow" id="app">
         <h2 class="fw-bold mb-4 border-bottom pb-2">İletişim Formu</h2>
@@ -90,6 +111,18 @@
         </form>
     </div>
 
+    <!-- Footer Kısmı -->
+    <footer class="bg-dark text-white py-4 text-center mt-5">
+        <div class="container">
+            <p class="mb-1 fw-bold">Onur Azak | Sakarya Üniversitesi</p>
+            <p class="small text-secondary mb-3">Bilgisayar Mühendisliği Web Projesi © 2026</p>
+            <div>
+                <a href="https://github.com/OnurAzak" class="text-white text-decoration-none mx-2"><i class="fab fa-github fs-5"></i></a>
+                <a href="#" class="text-white text-decoration-none mx-2"><i class="fab fa-linkedin fs-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
 <script>
 // 1. NATIVE JAVASCRIPT DENETİMİ
 function validateNativeJS() {
@@ -115,7 +148,7 @@ function validateNativeJS() {
     form.submit();
 }
 
-// 2. VUE.JS DENETİMİ (JS Framework Zorunluluğu)
+// 2. VUE.JS DENETİMİ 
 const { createApp } = Vue;
 createApp({
     methods: {

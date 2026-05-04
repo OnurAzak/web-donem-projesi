@@ -6,76 +6,77 @@
     <title>Manisa - Şehrim</title>
     <!-- BOOTSTRAP CSS (Tasarımın çalışması için mutlaka kalmalı) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-light">
 
-<!-- Üst Mini Buton -->
-<div class="container mt-3">
-  <a href="index.html" class="btn btn-dark btn-sm px-3 py-2 shadow-sm rounded-pill fw-bold">
-    ← Ana Sayfaya Dön
-  </a>
-</div>
+    <!-- Ortak Üst Menü (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Onur'un Portfolyosu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase small fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Hakkımda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sehrim.html">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="miras.html">Mirasımız</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary btn-sm text-white ms-lg-3 px-3" href="login.php">Giriş</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Şehrim Slider Başlangıcı -->
-<div class="container mt-4 mb-5">
-  <div id="sehrimSlider" class="carousel slide" data-bs-ride="carousel">
-    
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="2"></button>
-      <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="3"></button>
-      <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="4"></button>
+    <div class="container mt-4 mb-5">
+        <div id="sehrimSlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#sehrimSlider" data-bs-slide-to="4"></button>
+            </div>
+
+            <div class="carousel-inner rounded-4 shadow-lg">
+                <div class="carousel-item active">
+                    <img src="kula.webp" class="d-block w-100" style="aspect-ratio: 16/9; object-fit: cover;" alt="Kula Peri Bacaları">
+                </div>
+                <div class="carousel-item">
+                    <img src="at.webp" class="d-block w-100" style="aspect-ratio: 16/9; object-fit: cover;" alt="Spil Yılkı Atları">
+                </div>
+                <div class="carousel-item">
+                    <img src="han.webp" class="d-block w-100" style="aspect-ratio: 16/9; object-fit: cover;" alt="Tarihi Kurşunlu Han">
+                </div>
+                <div class="carousel-item">
+                    <img src="valilik.webp" class="d-block w-100" style="aspect-ratio: 16/9; object-fit: cover;" alt="Manisa Valiliği">
+                </div>
+                <div class="carousel-item">
+                    <img src="merkez.webp" class="d-block w-100" style="aspect-ratio: 16/9; object-fit: cover;" alt="Manisa Şehir Merkezi">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#sehrimSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#sehrimSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
     </div>
 
-    <div class="carousel-inner rounded-4 shadow-lg">
-      
-      <!-- 1. Fotoğraf: Kula -->
-      <div class="carousel-item active">
-        <img src="kula.webp" class="d-block w-100" style="aspect-ratio: 16/9; object-fit: cover;" alt="Kula Peri Bacaları">
-      </div>
-      
-      <!-- 2. Fotoğraf: Yılkı Atları -->
-      <div class="carousel-item">
-        <img src="at.webp" class="d-block w-100" style="aspect-ratio: 16/9; object-fit: cover;" alt="Spil Yılkı Atları">
-      </div>
-      
-      <!-- 3. Fotoğraf: Tarihi Han -->
-      <div class="carousel-item">
-        <img src="han.webp" class="d-block w-100" style="aspect-ratio: 16/9; object-fit: cover;" alt="Tarihi Kurşunlu Han">
-      </div>
-      
-      <!-- 4. Fotoğraf: Valilik -->
-      <div class="carousel-item">
-        <img src="valilik.webp" class="d-block w-100" style="aspect-ratio: 16/9; object-fit: cover;" alt="Manisa Valiliği">
-      </div>
-
-      <!-- 5. Fotoğraf: Şehir Merkezi -->
-      <div class="carousel-item">
-        <img src="merkez.webp" class="d-block w-100" style="aspect-ratio: 16/9; object-fit: cover;" alt="Manisa Şehir Merkezi">
-      </div>
-
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#sehrimSlider" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#sehrimSlider" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</div>
-
-
-
-<div class="container manisa-ozel-icerik my-5 py-5 bg-white shadow rounded-4">
+    <div class="container manisa-ozel-icerik my-5 py-5 bg-white shadow rounded-4">
         <h1 class="text-center mb-5 fw-bold" style="color: #d35400;">Manisa: Efsanelerin ve Şehzadelerin Şehri</h1>
 
-        <!-- 1. BÖLÜM: Efsanelerin Doğuşu (Resim Solda) -->
+        <!-- 1. BÖLÜM: Efsanelerin Doğuşu -->
         <div class="row align-items-center mb-5 pb-5">
             <div class="col-md-6 text-center">
-          <img src="Gemini_Generated_Image_ie9knkie9knkie9k.png" class="img-fluid rounded-4 shadow-sm" alt="Edebiyat ve Padişahlar">
+                <img src="Gemini_Generated_Image_ie9knkie9knkie9k.png" class="img-fluid rounded-4 shadow-sm" alt="Edebiyat ve Padişahlar">
             </div>
             <div class="col-md-6 ps-md-5 mt-4 mt-md-0">
                 <h2 class="fw-bold h3 mb-3 border-bottom pb-2">Efsanelerin Doğuşu</h2>
@@ -85,10 +86,10 @@
             </div>
         </div>
 
-        <!-- 2. BÖLÜM: Şehzadeler Şehri (Resim Sağda) -->
+        <!-- 2. BÖLÜM: Şehzadeler Şehri -->
         <div class="row align-items-center mb-5 pb-5 flex-md-row-reverse">
             <div class="col-md-6 text-center">
-             <img src="manisa-muradiye-camii-genel.jpg.png" class="img-fluid rounded-4 shadow-sm" alt="Muradiye Camii">
+                <img src="manisa-muradiye-camii-genel.jpg.png" class="img-fluid rounded-4 shadow-sm" alt="Muradiye Camii">
             </div>
             <div class="col-md-6 pe-md-5 mt-4 mt-md-0">
                 <h2 class="fw-bold h3 mb-3 border-bottom pb-2">Şehzadeler Şehri & Muradiye Cami</h2>
@@ -101,7 +102,6 @@
         <!-- 3. BÖLÜM: Cumhuriyet ve Bugün -->
         <div class="row mb-5 px-3">
             <div class="col-12 p-4 rounded-4 border-start border-primary border-5 bg-light shadow-sm">
-
                 <h2 class="fw-bold h3">Cumhuriyet ve Bugün</h2>
                 <p class="mb-0 fs-5">
                     8 Eylül 1922'de bağımsızlığına kavuşan Manisa, Cumhuriyet döneminde sanayisi, bereketli üzüm bağları ve köklü eğitim kültürüyle modern Türkiye'nin parlayan yıldızı olmuştur. Bugün, Spil Dağı’nın gölgesinde tarihini korurken, yetiştirdiği efsanelerle geleceğe yön vermeye devam etmektedir.
@@ -130,31 +130,28 @@
             <div class="col-md-6 pe-md-5 mt-4 mt-md-0">
                 <h2 class="fw-bold h3 mb-3 border-bottom pb-2">Manisa Lalesi (Anemon)</h2>
                 <p class="text-muted lead" style="text-align: justify;">
-                    Spil Dağı Milli Parkı’nda doğal olarak yetişen ve koruma altında olan endemik bir türdür. Latince adı *Anemone coronaria* olan bu lale, bölgenin iklim ve toprak yapısına özgü kırmızı rengiyle bilinir. Her yıl bahar aylarında çiçek açan lale, şehrin doğa turizmindeki en önemli sembollerinden biridir.
+                    Spil Dağı Milli Parkı’nda doğal olarak yetişen ve koruma altında olan endemik bir türdür. Latince adı Anemone coronaria olan bu lale, bölgenin iklim ve toprak yapısına özgü kırmızı rengiyle bilinir. Her yıl bahar aylarında çiçek açan lale, şehrin doğa turizmindeki en önemli sembollerinden biridir.
                 </p>
             </div>
         </div>
 
+        <!-- Edebiyat ve Padişahlar -->
+        <div class="row align-items-center mb-5 pb-5">
+            <div class="col-md-6 text-center">
+                <img src="Gemini_Generated_Image_wdx4zpwdx4zpwdx4.png" class="img-fluid rounded-4 shadow-sm mb-3" alt="Manisa Efsaneleri">
+                <img src="padisah-edebiyat.png" class="img-fluid rounded-4 shadow-sm" alt="Fatih ve Kanuni Edebiyat">
+            </div>
+            <div class="col-md-6 ps-md-5 mt-4 mt-md-0">
+                <h2 class="fw-bold h3 mb-3 border-bottom pb-2">Şiirin ve Sanatın Sancağı</h2>
+                <p class="text-muted lead" style="text-align: justify;">
+                    Manisa, sadece bir siyaset merkezi değil, aynı zamanda Osmanlı şehzadeleriyle birlikte Osmanlı şiirinin de yetiştiği sancaktır. Bu sancakta yetişen <strong>Fatih Sultan Mehmet (Avni)</strong> ve <strong>Kanuni Sultan Süleyman (Muhibbi)</strong> sadece devlet yönetiminde değil edebiyatta da önemli yere sahiptir. 
+                </p>
+                <p class="text-muted">
+                    Özellikle Manisa’nın sembolü olan <strong>lale</strong>, her iki sultanın şiirlerinde भी saflığın ve güzelliğin bir temsili olarak yer bulmuştur. Şehrin doğasından ilham alan bu dizeler, Manisa lalesinin zarif dokusunu divan edebiyatının en nadide örnekleriyle birleştirerek yüzyılları aşan edebi bir miras oluşturmuştur.
+                </p>
+            </div>
+        </div>
 
-    <!-- Edebiyat ve Padişahlar -->
-    <div class="row align-items-center mb-5 pb-5">
-        <div class="col-md-6 text-center">
-           <img src="Gemini_Generated_Image_wdx4zpwdx4zpwdx4.png" class="img-fluid rounded-4 shadow-sm" alt="Manisa Efsaneleri">
-           
-            <img src="padisah-edebiyat.png" class="img-fluid rounded-4 shadow-sm" alt="Fatih ve Kanuni Edebiyat">
-        </div>
-        <div class="col-md-6 ps-md-5 mt-4 mt-md-0">
-            <h2 class="fw-bold h3 mb-3 border-bottom pb-2">Şiirin ve Sanatın Sancağı</h2>
-            <p class="text-muted lead" style="text-align: justify;">
-                Manisa, sadece bir siyaset merkezi değil, aynı zamanda Osmanlı şehzadeleriyle birlikte Osmanlı şiirinin de yetiştiği sancaktır. Bu sancakta yetişen <strong>Fatih Sultan Mehmet (Avni)</strong> ve <strong>Kanuni Sultan Süleyman (Muhibbi)</strong> sadece devlet yönetiminde değil edebiyatta da önemli yere sahiptir. 
-            </p>
-            <p class="text-muted">
-                Özellikle Manisa’nın sembolü olan <strong>lale</strong>, her iki sultanın şiirlerinde de saflığın ve güzelliğin bir temsili olarak yer bulmuştur. Şehrin doğasından ilham alan bu dizeler, Manisa lalesinin zarif dokusunu divan edebiyatının en nadide örnekleriyle birleştirerek yüzyılları aşan edebi bir miras oluşturmuştur.
-            </p>
-        </div>
-    </div>
-        
-        
         <!-- 6. BÖLÜM: Mesir Macunu Festivali -->
         <div class="row mb-5 px-3">
             <div class="col-12 p-5 rounded-4 shadow-sm" style="background: #fdf2e9; border-left: 10px solid #d35400;">
@@ -165,63 +162,62 @@
             </div>
         </div>
 
-            
-<!-- 5. BÖLÜM: Spor ve Yaşam -->
-<section class="spor-alani pt-4">
-    <h2 class="text-center fw-bold mb-5">Spor ve Yaşam</h2>
-    <div class="row g-0 rounded-4 overflow-hidden shadow-lg mb-5 bg-white border" style="min-height: 450px;">
-        <!-- Video Alanı -->
-        <div class="col-md-8 bg-black d-flex align-items-center">
-            <video controls class="w-100" style="max-height: 450px; object-fit: contain;">
-                <source src="manisasporvideo.mp4" type="video/mp4">
-            </video>
-        </div>
-        
-     
-<div class="col-md-4 p-4 d-flex flex-column justify-content-center bg-dark text-white text-center">
-    
-    <!-- Manisaspor ve Akhisarspor legoları -->
-    <div class="d-flex justify-content-center align-items-center gap-3 mb-4">
-        <img src="manisa.jpg" class="rounded-circle border border-2 border-warning shadow-sm" style="width: 80px; height: 80px; object-fit: cover;" alt="Manisaspor">
-        <img src="akhisarspor-kulup-logo.png" style="width: 80px; height: auto; object-fit: contain;" alt="Akhisarspor">
+        <!-- 7. BÖLÜM: Spor ve Yaşam -->
+        <section class="spor-alani pt-4">
+            <h2 class="text-center fw-bold mb-5">Spor ve Yaşam</h2>
+            <div class="row g-0 rounded-4 overflow-hidden shadow-lg mb-5 bg-white border" style="min-height: 450px;">
+                <div class="col-md-8 bg-black d-flex align-items-center">
+                    <video controls class="w-100" style="max-height: 450px; object-fit: contain;">
+                        <source src="manisasporvideo.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col-md-4 p-4 d-flex flex-column justify-content-center">
+                    <h3 class="text-warning fw-bold border-bottom pb-2">Manisa'nın Spor Kültürü</h3>
+                    <p class="text-muted mt-3">
+                        Futboldan doğa sporlarına, Ege'nin en dinamik spor altyapısına dair görüntüler ve kulüp başarıları.
+                    </p>
+                    <small class="text-secondary d-block mb-4">Kaynak: Yerel Spor Arşivleri</small>
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="manisa.jpg" class="rounded-circle border border-2 border-warning shadow-sm" style="width: 60px; height: 60px; object-fit: cover;" alt="Manisaspor">
+                        <img src="akhisarspor-kulup-logo.png" style="width: 60px; height: auto; object-fit: contain;" alt="Akhisarspor">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-3">
+                <div class="col-md-6">
+                    <div class="card h-100 p-4" style="border-left: 6px solid #d35400 !important;">
+                        <h5 class="fw-bold mb-3">1. Manisaspor: Futbol Okulu</h5>
+                        <p class="text-muted mb-0" style="text-align: justify; line-height: 1.6;">
+                            Manisaspor, 1965 yılından bu yana şehrin en köklü futbol temsilcisidir. Kulüp, özellikle 2000'li yıllarda Süper Lig'de sergilediği performansla ve Türk futboluna kazandırdığı Arda Turan, Selçuk İnan, Caner Erkin, Burak Yılmaz gibi yıldız isimlerle Türk futboluna kazandırmıştır.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 p-4" style="border-left: 6px solid #27ae60 !important;">
+                        <h5 class="fw-bold mb-3">2. Akhisarspor: Kupa Şampiyonu</h5>
+                        <p class="text-muted mb-0" style="text-align: justify; line-height: 1.6;">
+                            2017-2018 sezonunda Ziraat Türkiye Kupası'nı, ardından TFF Süper Kupa'yı müzesine götüren kulüp, bu başarılarıyla Manisa'yı UEFA Avrupa Ligi gruplarında temsil etme hakkı kazanmıştır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <!-- Metin İçeriği -->
-    <div class="icerik-metin">
-        <h4 class="fw-bold text-warning mb-3">Manisa'nın Spor Kültürü</h4>
-        <p class="small opacity-75 px-2">Futboldan doğa sporlarına, Ege'nin en dinamik spor altyapısına dair görüntüler ve kulüp başarıları.</p>
-    </div>
-
-    <!-- Alt Bilgi Hattı -->
-    <div class="border-top border-secondary mt-3 pt-3">
-        <p class="small mb-0 text-muted" style="font-size: 0.75rem;">Kaynak: Yerel Spor Arşivleri</p>
-    </div>
-</div>
-
-<!-- Spor Kartları Bölümü -->
-<div class="row g-4 mt-3"> 
-    <!-- Manisaspor -->
-    <div class="col-md-6">
-        <div class="card h-100 p-4" style="border-left: 6px solid #d35400 !important;">
-            <h5 class="fw-bold mb-3">1. Manisaspor: Futbol Okulu</h5>
-            <p class="text-muted mb-0" style="text-align: justify; line-height: 1.6;">
-                Manisaspor, 1965 yılından bu yana şehrin en köklü futbol temsilcisidir. Kulüp, özellikle 2000'li yıllarda Süper Lig'de sergilediği performansla ve Türk futboluna kazandırdığı Arda Turan, Selçuk İnan, Caner Erkin, Burak Yılmaz gibi yıldız isimlerli Türk futboluna kazandırmıştır. Siyah-beyaz-kırmızılı ekip,  yetiştirici kimliği ve vizyoner altyapı kültürüyle ülkenin futbol mirasının temel taşlarından biridir.
-            </p>
+    <!-- Footer Kısmı -->
+    <footer class="bg-dark text-white py-4 text-center mt-5">
+        <div class="container">
+            <p class="mb-1 fw-bold">Onur Azak | Sakarya Üniversitesi</p>
+            <p class="small text-secondary mb-3">Bilgisayar Mühendisliği Web Projesi © 2026</p>
+            <div>
+                <a href="https://github.com/OnurAzak" class="text-white text-decoration-none mx-2"><i class="fab fa-github fs-5"></i></a>
+                <a href="#" class="text-white text-decoration-none mx-2"><i class="fab fa-linkedin fs-5"></i></a>
+            </div>
         </div>
-    </div>
-    <!-- Akhisarspor -->
-    <div class="col-md-6">
-        <div class="card h-100 p-4" style="border-left: 6px solid #27ae60 !important;">
-            <h5 class="fw-bold mb-3">2. Akhisarspor: Kupa Şampiyonu</h5>
-            <p class="text-muted mb-0" style="text-align: justify; line-height: 1.6;">
-                Manisa futbol tarihinin büyük başarıları arasında Akhisarspor da tarihiyle boy gösteriyor. 2017-2018 sezonunda Ziraat Türkiye Kupası'nı, ardından TFF Süper Kupa'yı müzesine götüren kulüp, bu başarılarıyla Manisa'yı UEFA Avrupa Ligi gruplarında temsil etme hakkı kazanmıştır. Akhisarspor, Manisa'nın futbol dünyasındaki rekabetçi gücünü uluslararası arenaya taşıyan önemli başarı simgesidir.
-            </p>
-        </div>
-    </div>
-</div>
+    </footer>
+
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
 </body>
 </html>
