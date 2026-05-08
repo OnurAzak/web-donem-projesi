@@ -146,3 +146,53 @@ img[alt="Manisa Lalesi"] {
 .manisa-ozel-sayfa .card-body {
     display: block !important;
 }
+
+
+
+/* Modern & Ağır Kurumsal Renk Paleti */
+:root {
+    --navy-blue: #001f3f;      /* Derin Lacivert */
+    --corporate-blue: #003366; /*  açık lacivert */
+    --dark-gray: #1a1a1a;      /* Yazılar için koyu gri/
+    --bg-light: #f4f7f9;       /* Ferah arka plan */
+}
+
+/* Başlıklar: Keskin ve Lacivert */
+h1, h2, h3, h4 {
+    color: var(--navy-blue) !important;
+    font-weight: 700;
+}
+
+/* Navigasyon: Lacivert Vurgulu */
+.nav-link.active {
+    color: var(--navy-blue) !important;
+    border-bottom: 2px solid var(--navy-blue);
+}
+
+/* Proje Başlıklarını Tek Seferde Boya */
+.text-primary {
+    color: var(--corporate-blue) !important;
+}
+
+/* Giriş Butonu */
+.btn-outline-primary {
+    color: var(--navy-blue);
+    border-color: var(--navy-blue);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--navy-blue);
+    color: white;
+}
+
+/* Başlıkları ve projeleri ağır laciverte zorla */
+h1, h2, h3, h4, .text-primary {
+    color: #001f3f !important; /* Derin Lacivert */
+    font-weight: 700;
+}
+
+/* Seçili menü elemanını vurgula */
+.nav-link.active {
+    color: #001f3f !important;
+    border-bottom: 2px solid #001f3f;
+}

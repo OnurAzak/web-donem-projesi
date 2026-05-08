@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- Karakter kodlamasını UTF-8 olarak ayarlıyoruz (Türkçe karakterler için ) -->
+    <meta charset="UTF-8">
+    <!-- Mobil uyumluluk için viewport ayarı yapıyoruz -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tarayıcı sekmesinde görünecek başlık -->
+    <title>Özgeçmişim</title>
+    
+    <!-- Css dosyasına bağlandı ve önbellek temizleme-->
+    <link rel="stylesheet" href="style.css?v=1">
+    
+    <!-- Bootstrap 5 kütüphanesi hazır stilleri kullanmak için dahil edildi-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navbar, sticky-top ile sayfayı aşağı kaydırınca sabit kalıyor -->
+    <header class="bg-white border-bottom sticky-top">
+        <!-- navbar-expand-lg: büyük ekranlarda yatay, küçük ekranlarda hamburger menü oluyor -->
+        <nav class="navbar navbar-expand-lg navbar-light container py-3">
+            <!-- Site logosu  tıklanınca ana sayfaya gidiyor -->
+            <a class="navbar-brand fw-bold text-primary" href="index.html" style="letter-spacing: 1px;">
+                ONUR AZAK
+            </a>
+
+            <!-- Küçük ekranlarda görünen hamburger butonu, data-bs-target ile menüyü açıyor -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigasyon linkleri, ms-auto ile sağa hizalandı -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Hakkında sayfasına link -->
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="index.html">Hakkında</a>
+                    </li>
+                    <!-- Aktif sayfa olduğu için active ve fw-bold class'ları içerir-->
+                    <li class="nav-item">
+                        <a class="nav-link px-3 active fw-bold" href="ozgecmis.html">Özgeçmiş</a>
+                    </li>
+                    <!-- Diğer sayfaların linkleri -->
+                    <li class="nav-item"><a class="nav-link px-3" href="sehrim.html">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="mirasimiz.html">Mirasımız</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-outline-primary btn-sm px-4" href="login.php">Giriş Yap</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sayfa başlığı bölümü -->
+    <header class="bg-dark text-white py-5 mb-4">
+        <div class="container text-center">
+            <!-- Ana başlık -->
+            <h1>Özgeçmişim</h1>
+            <!-- Altında açıklayıcı kısa metin -->
+            <p class="lead">Bilgisayar Mühendisliği Öğrencisi 1. Sınıf</p>
+        </div>
+    </header>
+
+    <!-- Ana içerik alanı -->
+    <main class="container my-5">
+        <!-- İki sütunlu düzen: sol taraf geniş (8/12), sağ taraf dar (4/12) -->
+        <div class="row">
+            
+            <!-- Sol sütun: Eğitim ve Projeler bölümleri -->
+            <div class="col-lg-8">
+                
+                <!-- Eğitim Bilgileri bölümü -->
+                <section class="mb-5">
+                    <!-- Altına çizgi çekilen bölüm başlığı -->
+                    <h2 class="border-bottom pb-2 mb-4">Eğitim Bilgileri</h2>
+
+                    <!-- Üniversite bilgisi -->
+                    <article class="mb-4">
+                        <h4 class="fw-bold">Sakarya Üniversitesi (SAÜ)</h4>
+                        <p class="text-muted">Bilgisayar Mühendisliği | 2025 - Günümüz</p>
+                        <p>Lisans eğitimim kapsamında mesleki alanım olan  C++,C# HTML programlama dilleri ve analitik zeka gelişimi için temel mühendislik dersleri üzerine çalışmaktayım.</p>
+                    </article>
+
+                    <!-- Lise bilgisi -->
+                    <article>
+                        <h4 class="fw-bold">Lise Eğitimi</h4>
+                        <p class="text-muted">Şehzadeler Gediz Anadolu Lisesi | 2020-2024</p>
+                    </article>
+                </section>
+
+                <!-- Projeler bölümü -->
+                <section class="mb-5">
+                    <h2 class="border-bottom pb-2 mb-4">Projeler</h2>
+
+                    <!-- Proje 1: C# ile yaptığım Paint uygulaması -->
+                    <article class="mb-4">
+                        <!-- text-primary ile mavi proje başlığı -->
+                        <h4 class="fw-bold text-primary">C# Paint Uygulaması</h4>
+                        <p>Windows Forms kullanılarak geliştirilmiş, temel çizim araçlarını içeren masaüstü uygulaması.</p>
+                    </article>
+
+                    <!-- Proje 2: Bu web sitesi projesi -->
+                    <article class="mb-4">
+                        <h4 class="fw-bold text-primary">Web Tasarım Projesi</h4>
+                        <p>HTML, CSS ve PHP kullanılarak hazırlanan kendimi ve memleketimi tanıttığım web sitesi.</p>
+                    </article>
+
+                    <!-- Proje 3: TÜBİTAK projesi -->
+                    <article class="mb-4">
+                        <h4 class="fw-bold text-primary">Akıllı Tarım ve Sürdürülebilirlik Projesi (TÜBİTAK)</h4>
+                        <p>Teknoloji ve tarımın birleştirilmesiyle oluşturulan, çevreci ve modern otomasyon odaklı bir projedir.</p>
+                    </article>
+
+                    <!-- Proje 4: OOP prensipleriyle yazılmış birim dönüştürücü -->
+                    <article>
+                        <h4 class="fw-bold text-primary">Nesne Dayalı Birim Dönüştürücü</h4>
+                        <!-- small class ile küçük boyutlu teknoloji etiketi -->
+                        <p class="text-muted small">C# / OOP Prensipleri</p>
+                        <p>Temel ölçü birimlerini birbirine dönüştüren, OOP prensipleriyle kurgulanmış bir uygulamadır.</p>
+                    </article>
+                </section>
+            </div>
+
+            <!-- Sağ sütun: Yetenekler ve İletişim kutuları -->
+            <div class="col-lg-4">
+                
+                <!-- Yetenekler kartı bg-light ile açık gri arka plan -->
+                <aside class="bg-light p-4 rounded shadow-sm mb-4">
+                    <h3 class="h5 border-bottom pb-2 mb-3">Yetenekler</h3>
+                    <!-- Liste elemanı yok işaretleri kaldırıldı, ikon ile beraber gösteriliyor -->
+                    <ul class="list-unstyled">
+                        <!-- fas fa-check: Font Awesome onay ikonu (icon kütüphanesi gerektirir) -->
+                        <li><i class="fas fa-check text-primary me-2"></i>C#, C++</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>HTML5 & CSS3</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>PHP</li>
+                        <li><i class="fas fa-check text-primary me-2"></i>Bootstrap 5</li>
+                    </ul>
+                </aside>
+
+                <!-- İletişim bilgileri kartı -->
+                <aside class="bg-light p-4 rounded shadow-sm">
+                    <h3 class="h5 border-bottom pb-2 mb-3">İletişim</h3>
+                    <!-- mb-2 ile satırlar arası boşluk bırakıyorum -->
+                    <p class="mb-2"><strong>E-posta:</strong> b251210075@sakarya.edu.tr</p>
+                    <p><strong>Konum:</strong> Sakarya, Türkiye</p>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sayfa altbilgisi, telif hakkı bilgisi -->
+    <footer class="text-center py-4 mt-5 border-top">
+        <p>&copy; 2026 Onur Azak - Web Teknolojileri Projesi</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript dosyası, menü açma/kapama gibi etkileşimler için gerekli -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
