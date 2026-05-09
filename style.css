@@ -76,7 +76,7 @@ img[alt="Manisa Lalesi"] {
 }
 
 /* Yazıların resimlerin tam ortasına hizalanması için kullanılır */
-.col-md-6 {
+.manisa-ozel-icerik .col-md-6  {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,11 +163,7 @@ h1, h2, h3, h4 {
     font-weight: 700;
 }
 
-/* Navigasyon: Lacivert Vurgulu */
-.nav-link.active {
-    color: var(--navy-blue) !important;
-    border-bottom: 2px solid var(--navy-blue);
-}
+
 
 /* Proje Başlıklarını Tek Seferde Boya */
 .text-primary {
@@ -187,12 +183,19 @@ h1, h2, h3, h4 {
 
 /* Başlıkları ve projeleri ağır laciverte zorla */
 h1, h2, h3, h4, .text-primary {
-    color: #001f3f !important; /* Derin Lacivert */
+    color: #001f3f ; /* Derin Lacivert */
     font-weight: 700;
 }
 
-/* Seçili menü elemanını vurgula */
-.nav-link.active {
-    color: #001f3f !important;
-    border-bottom: 2px solid #001f3f;
+/* Seçili menü elemanını beyaz ve altı çizgili yap */
+.navbar-dark .nav-link.active {
+    color: #ffffff !important;
+    border-bottom: 2px solid #ffffff;
+}
+
+.btn-primary {
+    color: #ffffff !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    line-height: 1.5 !important;
 }
